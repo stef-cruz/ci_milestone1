@@ -16,12 +16,9 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed">
-            <!-- TODO: add sticky top -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img id="logo-nav" src="assets/images/logos/libraries-ireland-logo.jpg">
-                </a>
+                <a class="navbar-brand" href="#">Dublin City Libraries</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -38,7 +35,7 @@
                             <a class="nav-link" href="#">Catalogue</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Libraries Addresses</a>
+                            <a class="nav-link" href="#">Library Addresses</a>
                         </li>
                     </ul>
                 </div>
@@ -64,11 +61,48 @@
     <!-- Library Locations -->
     <section class="library-locations-section">
         Libraries near me
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+            quidem sit eos eveniet similique commodi vitae dignissimos hic sed,
+            ad mollitia natus blanditiis iusto atque aut distinctio quos autem doloribus?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+            quidem sit eos eveniet similique commodi vitae dignissimos hic sed,
+            ad mollitia natus blanditiis iusto atque aut distinctio quos autem doloribus?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+            quidem sit eos eveniet similique commodi vitae dignissimos hic sed,
+            ad mollitia natus blanditiis iusto atque aut distinctio quos autem doloribus?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+            quidem sit eos eveniet similique commodi vitae dignissimos hic sed,
+            ad mollitia natus blanditiis iusto atque aut distinctio quos autem doloribus?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+            quidem sit eos eveniet similique commodi vitae dignissimos hic sed,
+            ad mollitia natus blanditiis iusto atque aut distinctio quos autem doloribus?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+            quidem sit eos eveniet similique commodi vitae dignissimos hic sed,
+            ad mollitia natus blanditiis iusto atque aut distinctio quos autem doloribus?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+            quidem sit eos eveniet similique commodi vitae dignissimos hic sed,
+            ad mollitia natus blanditiis iusto atque aut distinctio quos autem doloribus?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+            quidem sit eos eveniet similique commodi vitae dignissimos hic sed,
+            ad mollitia natus blanditiis iusto atque aut distinctio quos autem doloribus?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+            quidem sit eos eveniet similique commodi vitae dignissimos hic sed,
+            ad mollitia natus blanditiis iusto atque aut distinctio quos autem doloribus?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+            quidem sit eos eveniet similique commodi vitae dignissimos hic sed,
+            ad mollitia natus blanditiis iusto atque aut distinctio quos autem doloribus?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+            quidem sit eos eveniet similique commodi vitae dignissimos hic sed,
+            ad mollitia natus blanditiis iusto atque aut distinctio quos autem doloribus?
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+            quidem sit eos eveniet similique commodi vitae dignissimos hic sed,
+            ad mollitia natus blanditiis iusto atque aut distinctio quos autem doloribus?</p>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        Footer should contain: link to the library, contact information, Dublin City Council logo
+        Footer should contain: link to the library, contact information, Dublin City Council logo, Libraries Ireland
+        Logo
     </footer>
 
     <!-- JS scritps bootstrap links -->
@@ -82,7 +116,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-
+    
+    <!-- Script used to change navbar colour on scroll, taken from https://stackoverflow.com/questions/23706003/changing-nav-bar-color-after-scrolling -->
+    
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".navbar-fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
 </body>
 
 </html>

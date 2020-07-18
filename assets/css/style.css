@@ -1,5 +1,15 @@
-nav #logo-nav {
+#logo-nav {
   height: 100px;
   width: auto;
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: blue !important;
+  -webkit-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+
+.navbar-fixed-top.scrolled .nav-link {
+  color: #555;
 }
 /*# sourceMappingURL=style.css.map */
