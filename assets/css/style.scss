@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Domine:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700');
+@import url("https://fonts.googleapis.com/css?family=Domine:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700");
 
 // -----------> Mixins
 
@@ -6,19 +6,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    }
+}
 
 // -----------> Colours
 
 $primary-1: #3f367c;
-$primary-2: #f7a748;
+$primary-2: #f59201;
 $primary-3: #ea148d;
 $primary-4: #d3d3d3;
 $primary-5: #41b9e6;
 
 // -----------> General styling
 
-body, footer {
+body,
+footer {
     font-family: "Roboto", sans-serif;
 }
 
@@ -28,15 +29,13 @@ nav {
     .navbar-brand {
         font-weight: 500;
     }
-
 }
 
 .navbar {
     padding: 0.9rem;
-    background-color: $primary-3;
+    background-color: $primary-2;
     color: white;
 }
-
 
 // Nav change colour on scroll - taken from https://stackoverflow.com/questions/23706003/changing-nav-bar-color-after-scrolling
 // Controls nav background colour after scroll
@@ -73,30 +72,36 @@ nav {
 
     a > i {
         position: absolute;
-        top: -2px;
-        left: 15px;
-        font-size: 2rem;
+        font-size: 2.5rem;
+        color: $primary-2;
+        margin-top: -30px;
     }
 
     .card {
-        background-color: transparent;
+        background-color: white;
+        border-radius: 50px 0;
+        padding: 30px;
     }
 
-
+    .card-title {
+        font-family: "Domine", serif;
+        font-size: 50px;
+        color: $primary-2;
+    }
 }
 
 // Animation up and down arrow hero image taken from https://stackoverflow.com/questions/59135939/how-to-make-an-icon-move-up-and-down-with-css-animation
 @keyframes updown {
     0% {
-      transform: translateY(-15%);
+        transform: translateY(-15%);
     }
-  
+
     50% {
-      transform: translateY(15%);
+        transform: translateY(15%);
     }
-  
+
     100% {
-      transform: translateY(-15%);
+        transform: translateY(-15%);
     }
 }
 
@@ -119,14 +124,13 @@ footer {
     .footer-logo-container {
         text-align: center;
         padding: 2em;
-        
+
         .footer-logo {
             border-radius: 5%;
             width: 90%;
             object-fit: cover;
             align-items: center;
         }
-    
     }
 
     .footer-nav {
