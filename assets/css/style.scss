@@ -10,10 +10,11 @@
 
 // -----------> Colours
 
-$primary-1: #1B1F3B;
-$primary-2: #375ABB;
-$primary-3: #FB8F8A;
+$primary-1: #3f367c;
+$primary-2: #f7a748;
+$primary-3: #ea148d;
 $primary-4: #d3d3d3;
+$primary-5: #41b9e6;
 
 // -----------> General styling
 
@@ -24,15 +25,15 @@ body, footer {
 //-----------> Nav
 
 nav {
-    #logo-nav {
-        height: 100px;
-        width: auto;
+    .navbar-brand {
+        font-weight: 500;
     }
+
 }
 
 .navbar {
     padding: 0.9rem;
-    background-color: $primary-2;
+    background-color: $primary-3;
     color: white;
 }
 
@@ -101,3 +102,43 @@ nav {
 
 //-----------> Footer
 
+footer {
+    background-color: $primary-1;
+    color: white;
+    font-weight: 200;
+
+    p > a {
+        color: white;
+        text-decoration: underline;
+    }
+
+    .footer-container {
+        padding: 40px 15px 40px 15px;
+    }
+
+    .footer-logo-container {
+        text-align: center;
+        padding: 2em;
+        
+        .footer-logo {
+            border-radius: 5%;
+            width: 90%;
+            object-fit: cover;
+            align-items: center;
+        }
+    
+    }
+
+    .footer-nav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        & a {
+            color: white;
+        }
+    }
+
+    .footer-nav-link {
+        text-align: left;
+    }
+}
