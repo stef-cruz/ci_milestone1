@@ -1,28 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Domine:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700');
 
+// -----------> Mixins
 
-// Nav
+@mixin flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+// -----------> Colours
+
+$primary-1: #1B1F3B;
+$primary-2: #375ABB;
+$primary-3: #FB8F8A;
+$primary-4: #d3d3d3;
+
+// -----------> General styling
+
+body, footer {
+    font-family: "Roboto", sans-serif;
+}
+
+//-----------> Nav
+
 nav {
     #logo-nav {
         height: 100px;
         width: auto;
     }
-
 }
 
-// Nav change colour on scroll - taken from https://stackoverflow.com/questions/23706003/changing-nav-bar-color-after-scrolling
+.navbar {
+    padding: 0.9rem;
+    background-color: $primary-2;
+    color: white;
+}
 
-// Controls nav background colour
+
+// Nav change colour on scroll - taken from https://stackoverflow.com/questions/23706003/changing-nav-bar-color-after-scrolling
+// Controls nav background colour after scroll
 .navbar-fixed-top.scrolled {
-    background-color: rgb(190, 49, 49) !important;
+    background-color: $primary-1 !important;
     transition: background-color 200ms linear;
 }
 
-// Controls nav text colour
+// Controls nav text colour after scroll
 .navbar-fixed-top.scrolled .nav-link {
-    color: rgb(245, 245, 245);
+    color: $primary-4;
 }
 
-// Footer
-footer {
+//-----------> Main container
 
+.main-container {
+    margin-top: 70px;
+    height: 100vh;
+    background: url("../images/tom-hermans-unsplash.jpg") no-repeat fixed center;
+    background-size: cover;
+    position: relative;
+
+    @include flexbox;
+
+    &__arrow {
+        position: absolute;
+        bottom: 45px;
+        left: 50%;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        border-radius: 50%;
+        transform: translateX(-50%)
+    }
+
+    a > i {
+        position: absolute;
+        top: -2px;
+        left: 15px;
+        font-size: 2rem;
+    }
+
+    .card {
+        background-color: transparent;
+    }
+
+
+}
+
+
+
+//-----------> Footer
+footer {
 }

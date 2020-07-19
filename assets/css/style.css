@@ -1,15 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Domine:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700");
+body, footer {
+  font-family: "Roboto", sans-serif;
+}
+
 nav #logo-nav {
   height: 100px;
   width: auto;
 }
 
+.navbar {
+  padding: 0.9rem;
+  background-color: #375ABB;
+  color: white;
+}
+
 .navbar-fixed-top.scrolled {
-  background-color: #be3131 !important;
+  background-color: #1B1F3B !important;
   -webkit-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
 }
 
 .navbar-fixed-top.scrolled .nav-link {
-  color: whitesmoke;
+  color: #d3d3d3;
+}
+
+.main-container {
+  margin-top: 70px;
+  height: 100vh;
+  background: url("../images/tom-hermans-unsplash.jpg") no-repeat fixed center;
+  background-size: cover;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-container__arrow {
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.main-container a > i {
+  position: absolute;
+  top: -2px;
+  left: 15px;
+  font-size: 2rem;
+}
+
+.main-container .card {
+  background-color: transparent;
 }
 /*# sourceMappingURL=style.css.map */
