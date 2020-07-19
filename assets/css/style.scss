@@ -1,16 +1,28 @@
-// add comments as much as you can about classes
-// maybe even functions, mixins, etc
 
-#logo-nav {
+
+// Nav
+nav {
+    #logo-nav {
         height: 100px;
         width: auto;
     }
 
-.navbar-fixed-top.scrolled {
-        background-color: rgb(255, 255, 255) !important;
-        transition: background-color 200ms linear;
-      }
+}
 
+// Nav change colour on scroll - taken from https://stackoverflow.com/questions/23706003/changing-nav-bar-color-after-scrolling
+
+// Controls nav background colour
+.navbar-fixed-top.scrolled {
+    background-color: rgb(190, 49, 49) !important;
+    transition: background-color 200ms linear;
+}
+
+// Controls nav text colour
 .navbar-fixed-top.scrolled .nav-link {
-        color:#555;
-      }
+    color: rgb(245, 245, 245);
+}
+
+// Footer
+footer {
+
+}
