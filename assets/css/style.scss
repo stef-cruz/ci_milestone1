@@ -67,8 +67,7 @@ nav {
         width: 60px;
         height: 60px;
         cursor: pointer;
-        border-radius: 50%;
-        transform: translateX(-50%)
+        animation: updown 1.5s ease infinite;
     }
 
     a > i {
@@ -85,8 +84,20 @@ nav {
 
 }
 
-
+// Animation up and down arrow hero image taken from https://stackoverflow.com/questions/59135939/how-to-make-an-icon-move-up-and-down-with-css-animation
+@keyframes updown {
+    0% {
+      transform: translateY(-15%);
+    }
+  
+    50% {
+      transform: translateY(15%);
+    }
+  
+    100% {
+      transform: translateY(-15%);
+    }
+}
 
 //-----------> Footer
-footer {
-}
+

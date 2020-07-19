@@ -48,9 +48,8 @@ nav #logo-nav {
   width: 60px;
   height: 60px;
   cursor: pointer;
-  border-radius: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -webkit-animation: updown 1.5s ease infinite;
+          animation: updown 1.5s ease infinite;
 }
 
 .main-container a > i {
@@ -62,5 +61,35 @@ nav #logo-nav {
 
 .main-container .card {
   background-color: transparent;
+}
+
+@-webkit-keyframes updown {
+  0% {
+    -webkit-transform: translateY(-15%);
+            transform: translateY(-15%);
+  }
+  50% {
+    -webkit-transform: translateY(15%);
+            transform: translateY(15%);
+  }
+  100% {
+    -webkit-transform: translateY(-15%);
+            transform: translateY(-15%);
+  }
+}
+
+@keyframes updown {
+  0% {
+    -webkit-transform: translateY(-15%);
+            transform: translateY(-15%);
+  }
+  50% {
+    -webkit-transform: translateY(15%);
+            transform: translateY(15%);
+  }
+  100% {
+    -webkit-transform: translateY(-15%);
+            transform: translateY(-15%);
+  }
 }
 /*# sourceMappingURL=style.css.map */
