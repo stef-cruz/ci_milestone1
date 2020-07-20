@@ -16,11 +16,22 @@ $primary-3: #ea148d;
 $primary-4: #d3d3d3;
 $primary-5: #41b9e6;
 
+// -----------> Media queries - Screen sizes
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
 // -----------> General styling
 
 body,
 footer {
     font-family: "Roboto", sans-serif;
+}
+
+// -----------> Block divider
+
+.block-divider {
+    margin: 5rem 0;
 }
 
 //-----------> Nav
@@ -77,16 +88,21 @@ nav {
         margin-top: -30px;
     }
 
-    .card {
+    &__card {
         background-color: white;
         border-radius: 50px 0;
         padding: 30px;
+        box-shadow: 10px 10px $primary-2;
     }
 
-    .card-title {
+    &__card-title {
         font-family: "Domine", serif;
         font-size: 50px;
         color: $primary-2;
+    }
+
+    &__card-text {
+        font-size: 1.2em;
     }
 }
 
@@ -104,6 +120,68 @@ nav {
         transform: translateY(-15%);
     }
 }
+
+//-----------> How it works container
+
+.how-it-works-container {
+    &__heading {
+        text-align: center;
+        margin: 50px 0 50px 0;
+        font-family: "Domine", serif;
+        color: $primary-1;
+    }
+
+    &__card {
+        margin: 0 50px 100px 50px;
+
+    }
+
+    &__card-title {
+        color: $primary-2;
+    }
+
+    &__card-title span {
+        display: block;
+    }
+
+    &__card-image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 50px 0;
+        box-shadow: 10px 10px $primary-2;
+    }
+
+    &__card--right {
+        text-align: right;
+    }
+}
+
+// Media queries taken from: https://getbootstrap.com/docs/4.5/examples/carousel/
+
+@media (min-width: $desktop-width) {
+    .how-it-works-container__card-title {
+        margin-top: 7rem;
+        font-size: 35px;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .how-it-works-container__card-title {
+        margin-top: 4rem;
+        font-size: 35px;
+    }
+    .col-md-7 {
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+    .order-md-2 {
+        order: 2;
+    }
+    .order-md-1 {
+        order: 1;
+}
+
 
 //-----------> Footer
 
