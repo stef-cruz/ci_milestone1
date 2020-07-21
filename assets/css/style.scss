@@ -15,6 +15,7 @@ $primary-2: #9D98C2;
 $primary-3: #58B6DE;
 $primary-4: #E5376F;
 $primary-5: #F1C48D;
+$primary-6: white;
 
 // -----------> Media queries - Screen sizes variables
 
@@ -45,7 +46,7 @@ nav {
 .navbar {
     padding: 0.9rem;
     background-color: $primary-4;
-    color: white;
+    color: $primary-6;
 }
 
 // Nav change colour on scroll - taken from https://stackoverflow.com/questions/23706003/changing-nav-bar-color-after-scrolling
@@ -89,7 +90,7 @@ nav {
     }
 
     &__card {
-        background-color: white;
+        background-color: $primary-6;
         border-radius: 50px 0;
         padding: 30px;
         box-shadow: 10px 10px $primary-1;
@@ -163,6 +164,11 @@ nav {
     &__card--right {
         text-align: right;
     }
+
+    p > a {
+        color: black;
+        text-decoration: underline;
+    }
 }
 
 // Media queries taken from: https://getbootstrap.com/docs/4.5/examples/carousel/
@@ -195,7 +201,7 @@ nav {
 //-----------> Footer
 
 .footer-container {
-    background-color: white;
+    background-color: $primary-6;
     color: $primary-1;
     font-weight: 200;
     padding: 40px 15px 40px 15px;

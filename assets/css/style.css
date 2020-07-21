@@ -151,6 +151,11 @@ nav .navbar-brand {
   text-align: right;
 }
 
+.how-it-works-container p > a {
+  color: black;
+  text-decoration: underline;
+}
+
 @media (min-width: 1024px) {
   .how-it-works-container__card-title {
     margin-top: 7rem;
