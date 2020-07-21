@@ -12,13 +12,14 @@
 
 $primary-1: #41387C;
 $primary-2: #9D98C2;
-$primary-3: #58B6DE;
+$primary-3: #3755be;
 $primary-4: #E5376F;
 $primary-5: #F1C48D;
 $primary-6: white;
 
 // -----------> Media queries - Screen sizes variables
 
+$mobile-width: 480px;
 $tablet-width: 768px;
 $desktop-width: 1024px;
 
@@ -45,7 +46,7 @@ nav {
 
 .navbar {
     padding: 0.9rem;
-    background-color: $primary-4;
+    background-color: $primary-3;
     color: $primary-6;
 }
 
@@ -58,7 +59,7 @@ nav {
 
 // Controls nav text colour after scroll
 .navbar-fixed-top.scrolled .nav-link {
-    color: $primary-4;
+    color: $primary-2;
 }
 
 //-----------> Main container
@@ -85,7 +86,7 @@ nav {
     a > i {
         position: absolute;
         font-size: 2.5rem;
-        color: $primary-4;
+        color: $primary-3;
         margin-top: -30px;
     }
 
@@ -109,6 +110,13 @@ nav {
 
     &__opacity {
         background-color: rgba($primary-2, 0.2);
+    }
+}
+
+
+@media (max-width: $mobile-width) {
+    .main-container__card {
+        padding: 0;
     }
 }
 
@@ -181,6 +189,10 @@ nav {
 }
 
 @media (min-width: $tablet-width) {
+    .how-it-works-container__heading h2 {
+        font-size: 40px;
+    }
+    
     .how-it-works-container__card-title {
         margin-top: 4rem;
         font-size: 35px;
@@ -197,14 +209,34 @@ nav {
     }
 }
 
+//-----------> Catalogue
+
+.catalogue-container {
+    background-color: $primary-1;
+    color: $primary-6;
+    height: 500px;
+    margin: 50px 0 50px 0;
+    
+
+    &__heading {
+        text-align: center;
+        font-family: "Noto Serif", serif;
+
+        h2 {
+            padding: 50px 0 50px 0;
+        }
+    }
+
+}
+
 
 //-----------> Footer
 
 .footer-container {
     background-color: $primary-6;
     color: $primary-1;
-    font-weight: 200;
-    padding: 40px 15px 40px 15px;
+    font-weight: 300;
+    padding: 40px 15px 0 15px;
 
 
     p > a {
@@ -236,5 +268,23 @@ nav {
 
     &__nav-link {
         text-align: left;
+    }
+
+    &__social-links {
+        padding: 0;
+    }
+
+    &__social-links--list {
+        text-align: center;
+        background-color: $primary-1;
+        margin: 0;
+        padding: 15px 0;
+
+        a {
+            text-decoration: none;
+            color: $primary-6;
+            font-size: 1.5em;
+        }
+
     }
 }

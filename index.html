@@ -82,9 +82,11 @@
         <hr class="block-divider">
         <div class="row how-it-works-container__card">
             <div class="col-md-7 order-md-2">
-                <h3 class="how-it-works-container__card-title">Let us know what you want. 
+                <h3 class="how-it-works-container__card-title">Let us know what you want.
                     <span>We can hold the book, CD or DVD for you.</span></h3>
-                <p class="how-it-works-container__card-text">Tell us what books you are interested in through <a href="https://www.dublincity.ie/call-and-collect" target="_blank">this form</a> and we'll do our best to get them for you.
+                <p class="how-it-works-container__card-text">Tell us what books you are interested in through <a
+                        href="https://www.dublincity.ie/call-and-collect" target="_blank">this form</a> and we'll do our
+                    best to get them for you.
                 </p>
             </div>
             <div class="col-md-5 order-md-1">
@@ -97,7 +99,8 @@
             <div class="col-md-7">
                 <h3 class="how-it-works-container__card-title">Pick up your books and enjoy!
                     <span>Respecting social distancing, of course.</span></h3>
-                <p class="how-it-works-container__card-text">Library staff will then organise a date and time for you to come to your chosen call-and-collect library to pick up your books.
+                <p class="how-it-works-container__card-text">Library staff will then organise a date and time for you to
+                    come to your chosen call-and-collect library to pick up your books.
                 </p>
             </div>
             <div class="col-md-5">
@@ -105,14 +108,29 @@
                     alt="Woman selecting book">
             </div>
         </div>
-        <hr class="block-divider">
-
         <!-- ./How it works -->
 
         <!-- Library Catalogue -->
-        <section class="library-catalogue-section">
-            Browse library catalogue
-        </section>
+        <div class="catalogue-container">
+            <div class="row catalogue-container__heading">
+                <div class="col-xl-9">
+                    <h2>Search the Library Catalogue</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12" id="search_box">
+                        <input id="target" name="target" onclick="this.value='';"
+                            onkeypress="return submitenter(this,event)" size="40" type="text"
+                            value="Enter author, title or keyword(s)">
+                        &nbsp;
+                        <input id="go" onclick="gosearch();"
+                            src="https://www.dublincity.ie/sites/default/files/content/RecreationandCulture/libraries/libraries-images/magnifying.png"
+                            type="image" width="22" height="22" align="middle"><br>&nbsp;</div>
+                </div>
+            </div>
+
+        </div>
         <!-- ./Library Catalogue -->
 
         <!-- Library Locations -->
@@ -153,7 +171,32 @@
                                 Library</a> page
                             <br><br>
                             <i class="fas fa-envelope"></i> Email us at: <a
-                                href="mailto:info@librariesireland.ie">info@librariesireland.ie</a></p>
+                                href="mailto:info@librariesireland.ie">libraries@dublincity.ie</a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 footer-container__social-links">
+                        <ul class="list-inline footer-container__social-links--list">
+                            <li class="list-inline-item">
+                              <a target="_blank" href="https://www.facebook.com/DublinCityPublicLibraries">
+                                <i class="fab fa-facebook" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook link.</span>
+                              </a>
+                            </li>
+                            <li class="list-inline-item">
+                              <a target="_blank" href="https://twitter.com/LibrariesIre">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                                <span class="sr-only">Twitter link.</span>
+                              </a>
+                            </li>
+
+                            <li class="list-inline-item">
+                              <a target="_blank" href="https://youtube.com">
+                                <i class="fab fa-youtube" aria-hidden="true"></i>
+                                <span class="sr-only">Youtube link.</span>
+                              </a>
+                            </li>
+                          </ul>
                     </div>
                 </div>
             </div>
