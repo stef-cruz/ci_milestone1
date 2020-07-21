@@ -209,6 +209,19 @@ nav {
     }
 }
 
+// ./Media queries taken from webiste above ends here
+
+@media (min-width: $desktop-width) {
+    .col-xl-5 {
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+    .col-xl-3 {
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+    }
+}
+
 //-----------> Catalogue
 
 .catalogue-container {
@@ -236,23 +249,24 @@ nav {
     background-color: $primary-6;
     color: $primary-1;
     font-weight: 300;
-    padding: 40px 15px 0 15px;
-
 
     p > a {
         color: $primary-1;
         text-decoration: underline;
     }
 
+    &__wrapper {
+        padding: 0 0 2em 0;
+    }
+
 
     &__logo {
             text-align: center;
-            padding: 2em;
     }
         
     &__logo-img {
             border-radius: 5%;
-            width: 90%;
+            width: 80%;
             object-fit: cover;
             align-items: center;
         }
@@ -285,6 +299,27 @@ nav {
             color: $primary-6;
             font-size: 1.5em;
         }
+    }
 
+    .list-inline-item {
+        margin-right: 1em;
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .footer-container__logo-img {
+        padding: 2.5em 0 2.5em 0;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .footer-container__logo-img {
+        max-width: 30%;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .footer-container__logo-img {
+        max-width: 70%;
     }
 }
