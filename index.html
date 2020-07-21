@@ -76,7 +76,7 @@
             </div>
             <div class="col-md-5 col-xl-3">
                 <img class="how-it-works-container__card-image" src="assets/images/christin-hume-unsplash.jpg"
-                    alt="Woman selecting book">
+                    alt="Hand of a woman selecting book">
             </div>
         </div>
         <hr class="block-divider">
@@ -91,7 +91,7 @@
             </div>
             <div class="col-md-5 col-xl-3 order-md-1">
                 <img class="how-it-works-container__card-image" src="assets/images/glenn-carstens-peters-unsplash.jpg"
-                    alt="Woman selecting book">
+                    alt="Person creating a list on a notebook">
             </div>
         </div>
         <hr class="block-divider">
@@ -105,123 +105,134 @@
             </div>
             <div class="col-md-5 col-xl-3">
                 <img class="how-it-works-container__card-image" src="assets/images/blaz-photo-unsplash.jpg"
-                    alt="Woman selecting book">
+                    alt="Open book on a man's hand">
             </div>
         </div>
-        <!-- ./How it works -->
+    </div>
+    <!-- ./How it works -->
 
-        <!-- Library Catalogue -->
-        <div class="catalogue-container">
-            <div class="row catalogue-container__heading">
-                <div class="col-xl-9">
-                    <h2>Search the Library Catalogue</h2>
-                </div>
+    <!-- Library Catalogue -->
+    <div class="container-fluid catalogue-container">
+        <div class="row justify-content-center catalogue-container__heading">
+            <div class="col-xl-12">
+                <h2>Search the Library Catalogue</h2>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12" id="search_box">
-                        <input id="target" name="target" onclick="this.value='';"
-                            onkeypress="return submitenter(this,event)" size="40" type="text"
-                            value="Enter author, title or keyword(s)">
-                        &nbsp;
-                        <input id="go" onclick="gosearch();"
-                            src="https://www.dublincity.ie/sites/default/files/content/RecreationandCulture/libraries/libraries-images/magnifying.png"
-                            type="image" width="22" height="22" align="middle"><br>&nbsp;</div>
-                </div>
-            </div>
-
         </div>
-        <!-- ./Library Catalogue -->
 
-        <!-- Library Locations -->
-        <section class="library-locations-section">
-            Libraries near me
-        </section>
-        <!-- ./Library Locations -->
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container-fluid footer-container">
-                <div class="row footer-container__wrapper">
-                    <div class="col-12 col-md-6 footer-container__logo">
-                        <img src="assets/images/logos/libraries-ireland-logo.jpg" class="footer-container__logo-img"
-                            alt="Library Logo">
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <h4>Navigate</h4>
-                        <ul class="footer-container__nav">
-                            <li class="footer-container__nav-item">
-                                <a class="footer-container__nav-link" href="#">Call & Collect <span
-                                        class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="footer-container__nav-item">
-                                <a class="footer-container__nav-link" href="#">How it works</a>
-                            </li>
-                            <li class="footer-container__nav-item">
-                                <a class="footer-container__nav-link" href="#">Catalogue</a>
-                            </li>
-                            <li class="footer-container__nav-item">
-                                <a class="footer-container__nav-link" href="#">Local Libraries</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <h4>Contact</h4>
-                        <p><i class="fas fa-phone"></i> Contact details available on the <a href="#">Find your Local
-                                Library</a> page
-                            <br><br>
-                            <i class="fas fa-envelope"></i> Email us at: <a
-                                href="mailto:info@librariesireland.ie">libraries@dublincity.ie</a></p>
-                    </div>
+        <div class="row justify-content-center">
+            <!-- Search section taken from https://www.librariesireland.ie/ -->
+            <div class="col-12 col-xl-9" id="search_box">
+                <h4 class="catalogue-container__title">Over 12 million books, movies and more.</h4>
+                <p class="catalogue-container__title--alt">Free to borrow</p>
+                <input class="catalogue-container__search-bar" id="target" name="target" onclick="this.value='';"
+                    onkeypress="return submitenter(this,event)" size="28" value="What would you like to find?"
+                    type="text">
+                <button id="go" onclick="gosearch();">
+                    <span class="sr-only">What would you like to find?</span>
+                    <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M1216 832q0-185-131.5-316.5t-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5 316.5-131.5 131.5-316.5zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124-143 0-273.5-55.5t-225-150-150-225-55.5-273.5 55.5-273.5 150-225 225-150 273.5-55.5 273.5 55.5 225 150 150 225 55.5 273.5q0 220-124 399l343 343q37 37 37 90z"
+                            fill="#fff"></path>
+                    </svg>
+                </button>
+                <div class="catalogue-container__advanced-link">
+                    <a href="http://librariesireland.iii.com/iii/encore/home?lang=eng&amp;suite=def&amp;advancedSearch=true&amp;searchString=Enter%20author%2C%20title%20or%20keyword(s)"
+                        target="_blank">Advanced Search</a>
                 </div>
-                <div class="row">
-                    <div class="col-12 footer-container__social-links">
-                        <ul class="list-inline footer-container__social-links--list">
-                            <li class="list-inline-item">
-                              <a target="_blank" href="https://www.facebook.com/DublinCityPublicLibraries">
+            </div>
+        </div>
+    </div>
+    <!-- ./Library Catalogue -->
+
+    <!-- Library Locations -->
+    <section class="library-locations-section">
+        Libraries near me
+    </section>
+    <!-- ./Library Locations -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container-fluid footer-container">
+            <div class="row footer-container__wrapper">
+                <div class="col-12 col-md-6 footer-container__logo">
+                    <img src="assets/images/logos/libraries-ireland-logo.jpg" class="footer-container__logo-img"
+                        alt="Library Logo">
+                </div>
+                <div class="col-6 col-md-3">
+                    <h4>Navigate</h4>
+                    <ul class="footer-container__nav">
+                        <li class="footer-container__nav-item">
+                            <a class="footer-container__nav-link" href="#">Call & Collect <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="footer-container__nav-item">
+                            <a class="footer-container__nav-link" href="#">How it works</a>
+                        </li>
+                        <li class="footer-container__nav-item">
+                            <a class="footer-container__nav-link" href="#">Catalogue</a>
+                        </li>
+                        <li class="footer-container__nav-item">
+                            <a class="footer-container__nav-link" href="#">Local Libraries</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> Contact details available on the <a href="#">Find your Local
+                            Library</a> page
+                        <br><br>
+                        <i class="fas fa-envelope"></i> Email us at: <a
+                            href="mailto:info@librariesireland.ie">libraries@dublincity.ie</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 footer-container__social-links">
+                    <ul class="list-inline footer-container__social-links--list">
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://www.facebook.com/DublinCityPublicLibraries">
                                 <i class="fab fa-facebook" aria-hidden="true"></i>
                                 <span class="sr-only">Facebook link.</span>
-                              </a>
-                            </li>
-                            <li class="list-inline-item">
-                              <a target="_blank" href="https://twitter.com/LibrariesIre">
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://twitter.com/LibrariesIre">
                                 <i class="fab fa-twitter" aria-hidden="true"></i>
                                 <span class="sr-only">Twitter link.</span>
-                              </a>
-                            </li>
+                            </a>
+                        </li>
 
-                            <li class="list-inline-item">
-                              <a target="_blank" href="https://youtube.com">
+                        <li class="list-inline-item">
+                            <a target="_blank" href="https://youtube.com">
                                 <i class="fab fa-youtube" aria-hidden="true"></i>
                                 <span class="sr-only">Youtube link.</span>
-                              </a>
-                            </li>
-                          </ul>
-                    </div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
-        <!-- JS scritps bootstrap links -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-            crossorigin="anonymous"></script>
+    <!-- JS scritps bootstrap links -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 
-        <!-- Script used to change navbar colour on scroll, taken from https://stackoverflow.com/questions/23706003/changing-nav-bar-color-after-scrolling -->
-        <script>
-            $(function () {
-                $(document).scroll(function () {
-                    var $nav = $(".navbar-fixed-top");
-                    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-                });
+    <!-- Script used to change navbar colour on scroll, taken from https://stackoverflow.com/questions/23706003/changing-nav-bar-color-after-scrolling -->
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".navbar-fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
             });
-        </script>
+        });
+    </script>
 </body>
 
 </html>
