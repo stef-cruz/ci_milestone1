@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Domine:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Noto+Serif:100,200,300,400,500,600,700");
 body,
 footer {
   font-family: "Roboto", sans-serif;
@@ -14,18 +14,18 @@ nav .navbar-brand {
 
 .navbar {
   padding: 0.9rem;
-  background-color: #f59201;
+  background-color: #E5376F;
   color: white;
 }
 
 .navbar-fixed-top.scrolled {
-  background-color: #3f367c !important;
+  background-color: #41387C !important;
   -webkit-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
 }
 
 .navbar-fixed-top.scrolled .nav-link {
-  color: #d3d3d3;
+  color: #E5376F;
 }
 
 .main-container {
@@ -59,7 +59,7 @@ nav .navbar-brand {
 .main-container a > i {
   position: absolute;
   font-size: 2.5rem;
-  color: #f59201;
+  color: #E5376F;
   margin-top: -30px;
 }
 
@@ -67,18 +67,23 @@ nav .navbar-brand {
   background-color: white;
   border-radius: 50px 0;
   padding: 30px;
-  -webkit-box-shadow: 10px 10px #f59201;
-          box-shadow: 10px 10px #f59201;
+  -webkit-box-shadow: 10px 10px #41387C;
+          box-shadow: 10px 10px #41387C;
 }
 
 .main-container__card-title {
-  font-family: "Domine", serif;
+  font-family: "Noto Serif", serif;
+  font-weight: 500;
   font-size: 50px;
-  color: #f59201;
+  color: #41387C;
 }
 
 .main-container__card-text {
   font-size: 1.2em;
+}
+
+.main-container__opacity {
+  background-color: rgba(157, 152, 194, 0.2);
 }
 
 @-webkit-keyframes updown {
@@ -114,8 +119,8 @@ nav .navbar-brand {
 .how-it-works-container__heading {
   text-align: center;
   margin: 50px 0 50px 0;
-  font-family: "Domine", serif;
-  color: #3f367c;
+  font-family: "Noto Serif", serif;
+  color: #41387C;
 }
 
 .how-it-works-container__card {
@@ -123,11 +128,13 @@ nav .navbar-brand {
 }
 
 .how-it-works-container__card-title {
-  color: #f59201;
+  color: #41387C;
+  font-family: "Noto Serif", serif;
 }
 
 .how-it-works-container__card-title span {
   display: block;
+  color: #9D98C2;
 }
 
 .how-it-works-container__card-image {
@@ -136,8 +143,8 @@ nav .navbar-brand {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50px 0;
-  -webkit-box-shadow: 10px 10px #f59201;
-          box-shadow: 10px 10px #f59201;
+  -webkit-box-shadow: 5px 5px #9D98C2;
+          box-shadow: 5px 5px #9D98C2;
 }
 
 .how-it-works-container__card--right {
@@ -167,29 +174,31 @@ nav .navbar-brand {
         -ms-flex-order: 2;
             order: 2;
   }
+  .order-md-1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 
-footer {
-  background-color: #3f367c;
-  color: white;
+.footer-container {
+  background-color: white;
+  color: #41387C;
   font-weight: 200;
-}
-
-footer p > a {
-  color: white;
-  text-decoration: underline;
-}
-
-footer .footer-container {
   padding: 40px 15px 40px 15px;
 }
 
-footer .footer-logo-container {
+.footer-container p > a {
+  color: #41387C;
+  text-decoration: underline;
+}
+
+.footer-container__logo {
   text-align: center;
   padding: 2em;
 }
 
-footer .footer-logo-container .footer-logo {
+.footer-container__logo-img {
   border-radius: 5%;
   width: 90%;
   -o-object-fit: cover;
@@ -199,17 +208,17 @@ footer .footer-logo-container .footer-logo {
           align-items: center;
 }
 
-footer .footer-nav {
+.footer-container__nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-footer .footer-nav a {
-  color: white;
+.footer-container__nav a {
+  color: #41387C;
 }
 
-footer .footer-nav-link {
+.footer-container__nav-link {
   text-align: left;
 }
 /*# sourceMappingURL=style.css.map */
