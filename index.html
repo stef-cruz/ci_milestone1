@@ -118,27 +118,30 @@
                 <h2>Search the Library Catalogue</h2>
             </div>
         </div>
-
+        <hr class="catalogue-container__block-divider">
         <div class="row justify-content-center">
             <!-- Search section taken from https://www.librariesireland.ie/ -->
             <div class="col-12 col-xl-9" id="search_box">
                 <h4 class="catalogue-container__title">Over 12 million books, movies and more.</h4>
                 <p class="catalogue-container__title--alt">Free to borrow</p>
-                <input class="catalogue-container__search-bar" id="target" name="target" onclick="this.value='';"
-                    onkeypress="return submitenter(this,event)" size="28" value="What would you like to find?"
-                    type="text">
-                <button id="go" onclick="gosearch();">
-                    <span class="sr-only">What would you like to find?</span>
-                    <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M1216 832q0-185-131.5-316.5t-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5 316.5-131.5 131.5-316.5zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124-143 0-273.5-55.5t-225-150-150-225-55.5-273.5 55.5-273.5 150-225 225-150 273.5-55.5 273.5 55.5 225 150 150 225 55.5 273.5q0 220-124 399l343 343q37 37 37 90z"
-                            fill="#fff"></path>
-                    </svg>
-                </button>
+                <div class="catalogue-container__search-bar">
+                    <input id="target" name="target" onclick="this.value='';"
+                        onkeypress="return submitenter(this,event)" size="28" value="What would you like to find?"
+                        type="text">
+                    <button id="go" onclick="gosearch();">
+                        <span class="sr-only">What would you like to find?</span>
+                        <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1216 832q0-185-131.5-316.5t-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5 316.5-131.5 131.5-316.5zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124-143 0-273.5-55.5t-225-150-150-225-55.5-273.5 55.5-273.5 150-225 225-150 273.5-55.5 273.5 55.5 225 150 150 225 55.5 273.5q0 220-124 399l343 343q37 37 37 90z"
+                                fill="#fff"></path>
+                        </svg>
+                    </button>
+                </div>
                 <div class="catalogue-container__advanced-link">
                     <a href="http://librariesireland.iii.com/iii/encore/home?lang=eng&amp;suite=def&amp;advancedSearch=true&amp;searchString=Enter%20author%2C%20title%20or%20keyword(s)"
                         target="_blank">Advanced Search</a>
                 </div>
+
             </div>
         </div>
     </div>

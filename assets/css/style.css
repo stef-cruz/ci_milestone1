@@ -8,6 +8,12 @@ footer {
   margin: 5rem 0;
 }
 
+.catalogue-container__block-divider {
+  width: 50px;
+  height: 5px;
+  background-color: white;
+}
+
 nav .navbar-brand {
   font-weight: 500;
 }
@@ -213,7 +219,7 @@ nav .navbar-brand {
 .catalogue-container {
   background-color: #41387C;
   color: white;
-  height: 550px;
+  height: 500px;
   margin: 50px 0 50px 0;
 }
 
@@ -223,12 +229,18 @@ nav .navbar-brand {
 }
 
 .catalogue-container__heading h2 {
-  padding: 50px 0 50px 0;
+  padding: 50px 0 25px 0;
+}
+
+.catalogue-container__title {
+  text-align: center;
+  margin-top: 30px;
 }
 
 .catalogue-container__title--alt {
   color: #9D98C2;
-  padding-bottom: 15px;
+  padding-bottom: 35px;
+  text-align: center;
 }
 
 .catalogue-container__advanced-link {
@@ -255,7 +267,7 @@ nav .navbar-brand {
 }
 
 .catalogue-container #search_box input {
-  width: 85%;
+  width: 75%;
   padding: 1rem;
   border: 0;
   background-color: #eaeaea;
@@ -265,6 +277,10 @@ nav .navbar-brand {
 .catalogue-container input {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.catalogue-container__search-bar {
+  text-align: center;
 }
 
 .footer-container {
