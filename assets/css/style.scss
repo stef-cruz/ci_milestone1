@@ -15,7 +15,8 @@ $primary-2: #9D98C2;
 $primary-3: #3755be;
 $primary-4: #E5376F;
 $primary-5: #F1C48D;
-$primary-6: white;
+$white: white;
+$gray: #eaeaea;
 
 // ------------------------------- Media queries - Screen sizes variables
 
@@ -39,7 +40,7 @@ footer {
 .block-divider--white-pink {
     width: 50px;
     height: 5px;
-    background-color: $primary-6;
+    background-color: $white;
     border-radius: 50px 0;
     box-shadow: 2px 2px $primary-4;
 }
@@ -63,7 +64,7 @@ nav {
 .navbar {
     padding: 0.9rem;
     background-color: $primary-3;
-    color: $primary-6;
+    color: $white;
 }
 
 // Nav change colour on scroll - taken from https://stackoverflow.com/questions/23706003/changing-nav-bar-color-after-scrolling
@@ -107,7 +108,7 @@ nav {
     }
 
     &__card {
-        background-color: $primary-6;
+        background-color: $white;
         border-radius: 50px 0;
         padding: 30px;
         box-shadow: 10px 10px $primary-1;
@@ -242,9 +243,9 @@ nav {
 
 .catalogue-container {
     background-color: $primary-1;
-    color: $primary-6;
-    height: 500px;
-    margin: 50px 0 50px 0;
+    color: $white;
+    height: 520px;
+    margin: 50px 0 80px 0;
     
 
     &__heading {
@@ -273,7 +274,7 @@ nav {
         padding-top: 18px;
 
         a {
-            color: $primary-6;
+            color: $white;
         }
     }
 
@@ -295,19 +296,22 @@ nav {
             width: 75%;
             padding: 1rem;
             border: 0;
-            background-color: #eaeaea;
+            background-color: $gray;
             font-size: 1rem;
         }
     }
 
     input {
-        box-sizing: border-box;
+        box-sizing: border-box;  
     }
 
     &__search-bar {
         text-align: center;
     }
 
+    &__search-box {
+        border-radius: .3em;
+    }
 
 }
 
@@ -328,22 +332,37 @@ nav {
     }
 
     &__form {
-        background-color: #eaeaea;
+        background-color: $gray;
+        font-style: "Roboto", serif;
     }
 
     &__title {
         text-align: center;
         margin: 40px 0;
         color: $primary-1;
-
-    }
-
-    &____form {
-        font-style: "Roboto", serif;
     }
 
     &__dropdown {
         margin-bottom: 80px;
+    }
+
+    &__card {
+        margin-top: 50px;
+        color: $primary-1;
+        background-color: $gray;
+    }
+
+    &__card-body h5 {
+        padding-top: 30px;
+    }
+
+    &__card-img {
+        max-height: 250px;
+        object-fit: cover;
+    }
+
+    &__card-text span {
+        font-weight: 500;
     }
 
 }
@@ -353,7 +372,7 @@ nav {
 
     &:focus {
         color: $primary-4;
-        background-color: #eaeaea;
+        background-color: $gray;
         border-color: $primary-3;
         outline: 0;
         box-shadow: 0 0 0 0.2rem rgba($primary-2,.25);
@@ -368,7 +387,7 @@ nav {
 //------------------------------------------> Footer
 
 .footer-container {
-    background-color: $primary-6;
+    background-color: $white;
     color: $primary-1;
     font-weight: 300;
 
@@ -418,7 +437,7 @@ nav {
 
         a {
             text-decoration: none;
-            color: $primary-6;
+            color: $white;
             font-size: 1.5em;
         }
     }
