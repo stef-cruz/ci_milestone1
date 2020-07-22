@@ -36,12 +36,20 @@ footer {
     margin: 5rem 0;
 }
 
-.catalogue-container__block-divider {
+.block-divider--white-pink {
     width: 50px;
     height: 5px;
     background-color: $primary-6;
     border-radius: 50px 0;
     box-shadow: 2px 2px $primary-4;
+}
+
+.block-divider--blue {
+    width: 50px;
+    height: 5px;
+    background-color: $primary-1;
+    border-radius: 50px 0;
+    box-shadow: 2px 2px $primary-2;
 }
 
 //------------------------------------------> Nav
@@ -302,6 +310,59 @@ nav {
 
 
 }
+
+//------------------------------------------> Library Locations
+
+.locations-container {
+    #map {
+        width: 500px;
+        height: 400px;
+        margin-bottom: 80px;
+    }
+
+    &__heading {
+        text-align: center;
+        margin: 50px 0 50px 0;
+        font-family: "Noto Serif", serif;
+        color: $primary-1;
+    }
+
+    &__form {
+        background-color: #eaeaea;
+    }
+
+    &__title {
+        text-align: center;
+        margin: 40px 0;
+        color: $primary-1;
+
+    }
+
+    &____form {
+        font-style: "Roboto", serif;
+    }
+
+    &__dropdown {
+        margin-bottom: 80px;
+    }
+
+}
+
+.form-control {
+    color: $primary-1;
+
+    &:focus {
+        color: $primary-4;
+        background-color: #eaeaea;
+        border-color: $primary-3;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba($primary-2,.25);
+    }
+}
+
+.hide-dropdown {
+    display: none;   
+}    
 
 
 //------------------------------------------> Footer

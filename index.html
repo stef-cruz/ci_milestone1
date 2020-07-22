@@ -118,7 +118,7 @@
                 <h2>Search the Library Catalogue</h2>
             </div>
         </div>
-        <hr class="catalogue-container__block-divider">
+        <hr class="block-divider--white-pink">
         <div class="row justify-content-center">
             <!-- Search section taken from https://www.librariesireland.ie/ -->
             <div class="col-12 col-xl-9" id="search_box">
@@ -149,9 +149,63 @@
 
     <!-- Library Locations -->
     <div class="container locations-container">
+        <div class="row justify-content-center locations-container__heading">
+            <div class="col-xl-12">
+                <h2>Find your local library</h2>
+            </div>
+        </div>
+        <hr class="block-divider--blue">
         <div class="row">
-            <div id="map" class="col-12" style="width: 500px; height: 400px;">
+            <div class="col-xl-12">
+                <h4 class="locations-container__title">Select the branch offering the Call & Collect service.</h4>
+            </div>
+        </div>
+        <div class="row locations-container__dropdown">
+            <div class="col">
+                <select name="options" id="options" class="form-control form-control-lg locations-container__form">
+                    <option value="1">Charleville Mall</option>
+                    <option value="2">Dolphin’s Barn</option>
+                    <option value="3">Donaghmede</option>
+                    <option value="4">Drumcondra</option>
+                    <option value="5">Finglas</option>
+                    <option value="6">Kevin Street</option>
+                    <option value="7">Terenure</option>
+                    <option value="8">Marino</option>
+                    <option value="9">Phibsboro</option>
+                    <option value="10">Ringsend</option>
+                </select>
+                <div class="locations-container__content hide-dropdown" id="1" style="display: block">
+                    <div class="card locations-container__card">
+                        <img src="assets/images/libraries/charleville-mall-library.jpg" class="card-img-top"
+                            alt="Charleville Mall Library">
+                        <div class="card-body locations-container__card-body">
+                            <h5 class="card-title locations-container__card-title">Charleville Mall Library</h5>
+                            <p class="card-text locations-container__card-text">
+                                Address: North Strand, Dublin 1. D01 AX99 <br>
+                                Area: Central Area <br>
+                                Telephone: +353 1 222 8411 <br>
+                                Email: charlevillemalllibrary@dublincity.ie <br>
+                                Loc8 Code: NN6-32-XD7 <br></p>
+                            <h5 class="card-title locations-container__card-title">Opening hours</h5>
+                            <p class="card-text locations-container__card-text">
+                                Monday and Wednesday 10.00am - 4.00pm for 'Call and Collect' service.
+                                Holiday Arrangements (incl. Bank Holidays)</p>
+                            <h5 class="card-title locations-container__card-title">Directions</h5>
+                            <div class="locations-container__map">Placeholder</div>
+                            <!-- Each map to be loaded with the dropdown selection. Need to change script to one marker instead of multiple markers.
+             <div class="row"><div class="col-12" id="map"></div></div> -->
+                        </div>
+                        </ul>
+                    </div>
 
+                    <!-- Each map to be loaded with the dropdown selection. Need to change script to one marker instead of multiple markers.
+             <div class="row"><div class="col-12" id="map"></div></div> -->
+
+                </div>
+                <div class="hide-dropdown" id="2">Test 2</div>
+                <div class="hide-dropdown" id="3">Test 3</div>
+                <div class="hide-dropdown" id="4">Test 4</div>
+                <div class="hide-dropdown" id="5">Test 5</div>
             </div>
         </div>
     </div>
@@ -255,7 +309,7 @@
         function initMap() {
 
             var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 11,
+                zoom: 12,
                 center: { lat: 53.348890, lng: -6.259874 }
             });
 
@@ -289,6 +343,21 @@
             { lat: 53.318806, lng: -6.321827 }, //Walkinstown
         ]
     </script>
+
+    <!-- Script taken from https://stackoverflow.com/questions/12684677/how-to-hide-and-show-content-based-on-drop-down-selection -->
+
+    <script>
+        document.getElementById('options').onchange = function () {
+            var i = 1;
+            var myDiv = document.getElementById(i);
+            while (myDiv) {
+                myDiv.style.display = 'none';
+                myDiv = document.getElementById(++i);
+            }
+            document.getElementById(this.value).style.display = 'block';
+        };
+    </script>
+
 </body>
 
 </html>
