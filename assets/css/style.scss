@@ -40,6 +40,8 @@ footer {
     width: 50px;
     height: 5px;
     background-color: $primary-6;
+    border-radius: 50px 0;
+    box-shadow: 2px 2px $primary-4;
 }
 
 //------------------------------------------> Nav
@@ -224,7 +226,7 @@ nav {
     }
     .col-xl-3 {
         flex: 0 0 50%;
-        max-width: 50%;
+        max-width: 30%;
     }
 }
 

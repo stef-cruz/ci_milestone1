@@ -12,6 +12,9 @@ footer {
   width: 50px;
   height: 5px;
   background-color: white;
+  border-radius: 50px 0;
+  -webkit-box-shadow: 2px 2px #E5376F;
+          box-shadow: 2px 2px #E5376F;
 }
 
 nav .navbar-brand {
@@ -212,7 +215,7 @@ nav .navbar-brand {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
-    max-width: 50%;
+    max-width: 30%;
   }
 }
 

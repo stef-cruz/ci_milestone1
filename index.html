@@ -148,9 +148,13 @@
     <!-- ./Library Catalogue -->
 
     <!-- Library Locations -->
-    <section class="library-locations-section">
-        Libraries near me
-    </section>
+    <div class="container locations-container">
+        <div class="row">
+            <div id="map" class="col-12" style="width: 500px; height: 400px;">
+
+            </div>
+        </div>
+    </div>
     <!-- ./Library Locations -->
 
     <!-- Footer -->
@@ -227,6 +231,14 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
 
+    <!-- JS scritp for Google Maps -->
+
+    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+    <!-- Replace the value of the key parameter with your own API key. -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkoi_t3kXnq-Br3I8AZ0Fxb53rz18Z0LU&callback=initMap">
+        </script>
+
     <!-- Script used to change navbar colour on scroll, taken from https://stackoverflow.com/questions/23706003/changing-nav-bar-color-after-scrolling -->
     <script>
         $(function () {
@@ -235,6 +247,47 @@
                 $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
             });
         });
+    </script>
+
+    <!-- Google Maps script taken from https://developers.google.com/maps/documentation/javascript/marker-clustering -->
+
+    <script type="text/javascript">
+        function initMap() {
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 11,
+                center: { lat: 53.348890, lng: -6.259874 }
+            });
+
+            // Create an array of alphabetical characters used to label the markers.
+            var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+            // Add some markers to the map.
+            // Note: The code uses the JavaScript Array.prototype.map() method to
+            // create an array of markers based on a given "locations" array.
+            // The map() method here has nothing to do with the Google Maps API.
+            var markers = locations.map(function (location, i) {
+                return new google.maps.Marker({
+                    position: location,
+                    label: labels[i % labels.length]
+                });
+            });
+
+            // Add a marker clusterer to manage the markers.
+            var markerCluster = new MarkerClusterer(map, markers,
+                { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
+        }
+        var locations = [
+            { lat: 53.357260, lng: -6.246036 }, //Ballyfermot
+            { lat: 53.390511, lng: -6.265021 }, //Ballymun
+            { lat: 53.361863, lng: -6.299641 }, //Cabra
+            { lat: 53.396469, lng: -6.212173 }, //Coolock
+            { lat: 53.380156, lng: -6.173033 }, //Raheny
+            { lat: 53.343261, lng: -6.245183 }, //Pearse Street
+            { lat: 53.328242, lng: -6.230530 }, //Pembroke
+            { lat: 53.324228, lng: -6.265882 }, //Rathmines
+            { lat: 53.318806, lng: -6.321827 }, //Walkinstown
+        ]
     </script>
 </body>
 
