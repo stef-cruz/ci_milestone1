@@ -174,10 +174,11 @@
                     <option value="9">Phibsboro</option>
                     <option value="10">Ringsend</option>
                 </select>
+                <!-- Charleville Mall Card -->
                 <div class="locations-container__content hide-dropdown" id="1" style="display: block">
                     <div class="card locations-container__card">
-                        <img src="assets/images/libraries/charleville-mall-library.jpg" class="locations-container__card-img"
-                            alt="Charleville Mall Library">
+                        <img src="assets/images/libraries/charleville-mall-library.jpg"
+                            class="locations-container__card-img" alt="Charleville Mall Library">
                         <div class="card-body locations-container__card-body">
                             <h5 class="card-title locations-container__card-title">Contact Details</h5>
                             <p class="card-text locations-container__card-text">
@@ -186,27 +187,60 @@
                                 <span>Email:</span> charlevillemalllibrary@dublincity.ie <br></p>
                             <h5 class="card-title locations-container__card-title">Opening hours</h5>
                             <p class="card-text locations-container__card-text">
-                                Monday and Wednesday <br>
-                                10.00am - 4.00pm <br>
-                                Holiday Arrangements (incl. Bank Holidays)</p>
+                                <span>Monday and Wednesday:</span>10.00am - 4.00pm </p>
                             <h5 class="card-title locations-container__card-title">Directions</h5>
-                            <div class="locations-container__map">Placeholder</div>
-                            <!-- Each map to be loaded with the dropdown selection. Need to change script to one marker instead of multiple markers.
-             <div class="row"><div class="col-12" id="map"></div></div> -->
+                            <!-- Map taken from http://www.dublincity.ie/main-menu-services-recreation-culture-dublin-city-public-libraries-and-archive-locations-hours-3 -->
+                            <div class="field-items">
+                                <div class="field-item even"><iframe width="100%" height="350" frameborder="0"
+                                        scrolling="no" marginheight="0" marginwidth="0"
+                                        src="http://maps.google.com/maps?hl=en&amp;q=Charleville+Mall+Library&amp;iwloc=&amp;z=14&amp;t=m&amp;output=embed"></iframe>
+                                    <p class="simple-gmap-link"><a
+                                            href="http://maps.google.com/maps?q=Charleville+Mall+Library&amp;hl=en&amp;iwloc=&amp;z=14&amp;t=m"
+                                            target="_blank">View larger map</a></p>
+                                </div>
+                            </div>
                         </div>
-                        </ul>
                     </div>
-
-                    <!-- Each map to be loaded with the dropdown selection. Need to change script to one marker instead of multiple markers.
-             <div class="row"><div class="col-12" id="map"></div></div> -->
-
                 </div>
-                <div class="hide-dropdown" id="2">Test 2</div>
-                <div class="hide-dropdown" id="3">Test 3</div>
-                <div class="hide-dropdown" id="4">Test 4</div>
-                <div class="hide-dropdown" id="5">Test 5</div>
             </div>
+            <!-- ./ Charleville Mall Card -->
+            <!-- Dolphin's Barn Card -->
+            <div class="hide-dropdown" id="2">
+                <div class="card locations-container__card">
+                    <img src="assets/images/libraries/dolphins-barn-library.jpg"
+                        class="locations-container__card-img" alt="Dolphin's Barn Library">
+                    <div class="card-body locations-container__card-body">
+                        <h5 class="card-title locations-container__card-title">Contact Details</h5>
+                        <p class="card-text locations-container__card-text">
+                            <span>Address:</span> Parnell Road, Dublin 12. D12 ET22 <br>
+                            <span>Telephone:</span> +353 1 2228455 <br>
+                            <span>Email:</span> dolphinsbarnlibrary@dublincity.ie <br></p>
+                        <h5 class="card-title locations-container__card-title">Opening hours</h5>
+                        <p class="card-text locations-container__card-text">
+                            <span>Monday to Saturday:</span> 10.00am - 4.00pm <br>
+                            <span>Sunday:</span> Closed
+                            </p>
+                        <h5 class="card-title locations-container__card-title">Directions</h5>
+                        <!-- Map taken from http://www.dublincity.ie/main-menu-services-recreation-culture-dublin-city-public-libraries-and-archive-locations-hours-3 -->
+                        <div class="field-items">
+                            <div class="field-item even"><iframe width="100%" height="350" frameborder="0"
+                                    scrolling="no" marginheight="0" marginwidth="0"
+                                    src="http://maps.google.com/maps?hl=en&amp;q=Dolphin%27s+Barn+Library%2C+Parnell+Road%2C+Dublin+12&amp;iwloc=&amp;z=14&amp;t=m&amp;output=embed"></iframe>
+                                <p class="simple-gmap-link"><a
+                                        href="http://maps.google.com/maps?q=Dolphin%27s+Barn+Library%2C+Parnell+Road%2C+Dublin+12&amp;hl=en&amp;iwloc=&amp;z=14&amp;t=m"
+                                        target="_blank">View larger map</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- ./ Dolphin's Barn Card -->
+            <div class="hide-dropdown" id="3">Test 3</div>
+            <div class="hide-dropdown" id="4">Test 4</div>
+            <div class="hide-dropdown" id="5">Test 5</div>
         </div>
+    </div>
     </div>
     <!-- ./Library Locations -->
 
@@ -300,47 +334,6 @@
                 $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
             });
         });
-    </script>
-
-    <!-- Google Maps script taken from https://developers.google.com/maps/documentation/javascript/marker-clustering -->
-
-    <script type="text/javascript">
-        function initMap() {
-
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 12,
-                center: { lat: 53.348890, lng: -6.259874 }
-            });
-
-            // Create an array of alphabetical characters used to label the markers.
-            var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-
-            // Add some markers to the map.
-            // Note: The code uses the JavaScript Array.prototype.map() method to
-            // create an array of markers based on a given "locations" array.
-            // The map() method here has nothing to do with the Google Maps API.
-            var markers = locations.map(function (location, i) {
-                return new google.maps.Marker({
-                    position: location,
-                    label: labels[i % labels.length]
-                });
-            });
-
-            // Add a marker clusterer to manage the markers.
-            var markerCluster = new MarkerClusterer(map, markers,
-                { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
-        }
-        var locations = [
-            { lat: 53.357260, lng: -6.246036 }, //Ballyfermot
-            { lat: 53.390511, lng: -6.265021 }, //Ballymun
-            { lat: 53.361863, lng: -6.299641 }, //Cabra
-            { lat: 53.396469, lng: -6.212173 }, //Coolock
-            { lat: 53.380156, lng: -6.173033 }, //Raheny
-            { lat: 53.343261, lng: -6.245183 }, //Pearse Street
-            { lat: 53.328242, lng: -6.230530 }, //Pembroke
-            { lat: 53.324228, lng: -6.265882 }, //Rathmines
-            { lat: 53.318806, lng: -6.321827 }, //Walkinstown
-        ]
     </script>
 
     <!-- Script taken from https://stackoverflow.com/questions/12684677/how-to-hide-and-show-content-based-on-drop-down-selection -->

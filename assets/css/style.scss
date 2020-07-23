@@ -63,20 +63,20 @@ nav {
 
 .navbar {
     padding: 0.9rem;
-    background-color: $primary-3;
+    background-color: $primary-1;
     color: $white;
 }
 
 // Nav change colour on scroll - taken from https://stackoverflow.com/questions/23706003/changing-nav-bar-color-after-scrolling
 // Controls nav background colour after scroll
 .navbar-fixed-top.scrolled {
-    background-color: $primary-1 !important;
+    background-color: $primary-4 !important;
     transition: background-color 200ms linear;
 }
 
 // Controls nav text colour after scroll
 .navbar-fixed-top.scrolled .nav-link {
-    color: $primary-2;
+    color: $gray;
 }
 
 //------------------------------------------> Main container
@@ -103,7 +103,7 @@ nav {
     a > i {
         position: absolute;
         font-size: 2.5rem;
-        color: $primary-3;
+        color: $primary-1;
         margin-top: -30px;
     }
 
@@ -318,10 +318,9 @@ nav {
 //------------------------------------------> Library Locations
 
 .locations-container {
-    #map {
+    #mapcharleville {
         width: 500px;
         height: 400px;
-        margin-bottom: 80px;
     }
 
     &__heading {
