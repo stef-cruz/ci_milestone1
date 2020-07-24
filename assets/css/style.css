@@ -346,6 +346,10 @@ nav .navbar-brand {
   font-weight: 500;
 }
 
+.locations-container__card-title--pink {
+  color: #E5376F;
+}
+
 .form-control {
   color: #41387C;
 }
