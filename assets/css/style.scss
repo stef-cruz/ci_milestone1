@@ -383,6 +383,43 @@ nav {
 }    
 
 
+//------------------------------------------> Scroll to top arrow
+
+.nav-top {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    right: 50px;
+    bottom: 160px;
+    width: 37px;
+    height: 37px;
+    overflow: hidden;
+    background: url('../images/icons/up-arrow.png');
+    background-position: 0 0;
+    background-size: 37px 37px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    transition: bottom .3s ease-out,background 250ms ease-in-out;
+    text-indent: -9999px;
+    cursor: pointer;
+    background-color: $primary-4;
+    visibility: hidden;
+    opacity: 0;
+
+    &.active {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+
+@media (max-width: $mobile-width) {
+    .nav-top {
+        right: 15px;
+    }
+}
+
 //------------------------------------------> Footer
 
 .footer-container {

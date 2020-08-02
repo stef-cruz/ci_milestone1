@@ -1,4 +1,4 @@
-// Scroll on all <a> taken from https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
+// Smooth scroll on all <a>, taken from https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_eff_animate_smoothscroll
 
 $(document).ready(function(){
     // Add smooth scrolling to all links
