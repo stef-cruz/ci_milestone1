@@ -34,3 +34,10 @@ Table of Contents
     - Google Lighthouse
     - Browser and Device Testing
     - User Testing
+- Credits
+    - Content
+    - Media
+    - Images
+- Acknowledgements
+    - Inspiration
+    - Code
