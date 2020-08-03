@@ -60,25 +60,25 @@ Wireframes
 
 #### Home page
 
-![Home page](https://github.com/stefcruz/ci_milestone1/tree/master/assets/home-page.png)
+![Home page](https://github.com/stefcruz/ci_milestone1/blob/master/assets/images/wireframes/home-page.png)
 
 #### How it Works page
 
-![How it works page](https://github.com/stefcruz/ci_milestone1/tree/master/assets/how-it-works-page.png)
+![How it works page](https://github.com/stefcruz/ci_milestone1/blob/master/assets/images/wireframes/how-it-works-page.png)
 
 #### Library Catalogue page
 
-![Library Catalogue page](https://github.com/stefcruz/ci_milestone1/tree/master/assets/catalogue-page.png)
+![Library Catalogue page](https://github.com/stefcruz/ci_milestone1/blob/master/assets/images/wireframes/catalogue-page.png)
 
 
 #### Find your Local Library page
 
-![Find your Local Library page](https://github.com/stefcruz/ci_milestone1/tree/master/assets/local-library-page.png)
+![Find your Local Library page](https://github.com/stefcruz/ci_milestone1/blob/master/assets/images/wireframes/local-library-page.png)
 
 
 #### Footer
 
-![Footer](https://github.com/stefcruz/ci_milestone1/tree/master/assets/footer.png)
+![Footer](https://github.com/stefcruz/ci_milestone1/blob/master/assets/images/wireframes/footer.png)
 
 Technologies Used
 ------
