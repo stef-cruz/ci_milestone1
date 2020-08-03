@@ -58,18 +58,27 @@ As a library user...
 Wireframes
 ------
 
-### Home page
+#### Home page
+
+![Home page](https://github.com/stefcruz/ci_milestone1/tree/master/assets/home-page.png)
+
+#### How it Works page
+
+![How it works page](https://github.com/stefcruz/ci_milestone1/tree/master/assets/how-it-works-page.png)
+
+#### Library Catalogue page
+
+![Library Catalogue page](https://github.com/stefcruz/ci_milestone1/tree/master/assets/catalogue-page.png)
 
 
-### How it Works page
+#### Find your Local Library page
+
+![Find your Local Library page](https://github.com/stefcruz/ci_milestone1/tree/master/assets/local-library-page.png)
 
 
-### Library Catalogue page
+#### Footer
 
-
-### Find your Local Library page
-
-
+![Footer](https://github.com/stefcruz/ci_milestone1/tree/master/assets/footer.png)
 
 Technologies Used
 ------
@@ -77,26 +86,26 @@ Technologies Used
 ### Programming Languages
 
 - HTML5
-   Main language
+ - Main language
 
 - CSS3
-   Page style
+ - Page style
 
 - Sass
-   Preprocessor used to make CSS more fun and powerful
+ - Preprocessor used to make CSS more fun and powerful
 
 - JavaScript
-   Some front end functionalities 
+ - Some front end functionalities 
 
 
 
 ### Other Tools
 
 - GitHub
-   Used to store my project source code
+ - Used to store my project source code
 
 - VS Code
-   Main IDE
+ - Main IDE
 
 - Balsamiq
-   Used to create wireframes for the website.
+- Used to create wireframes for the website.
