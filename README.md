@@ -86,26 +86,26 @@ Technologies Used
 ### Programming Languages
 
 - HTML5
- - Main language
+    Main language used across website
 
 - CSS3
- - Page style
+    Page style
 
 - Sass
- - Preprocessor used to make CSS more fun and powerful
+    Preprocessor used to make CSS more fun and powerful
 
 - JavaScript
- - Some front end functionalities 
+    Some front end functionalities 
 
 
 
 ### Other Tools
 
 - GitHub
- - Used to store my project source code
+    Used to store my project source code
 
 - VS Code
- - Main IDE
+    Main IDE
 
 - Balsamiq
-- Used to create wireframes for the website.
+    Used to create wireframes for the website.
