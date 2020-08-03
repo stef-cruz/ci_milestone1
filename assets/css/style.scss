@@ -10,11 +10,11 @@
 
 // ------------------------------- Colour variables
 
-$primary-1: #41387C;
-$primary-2: #9D98C2;
+$primary-1: #41387c;
+$primary-2: #9d98c2;
 $primary-3: #3755be;
-$primary-4: #E5376F;
-$primary-5: #F1C48D;
+$primary-4: #e5376f;
+$primary-5: #f1c48d;
 $white: white;
 $gray: #eaeaea;
 
@@ -29,6 +29,17 @@ $desktop-width: 1024px;
 body,
 footer {
     font-family: "Roboto", sans-serif;
+}
+
+// Solution to fixed top navbar stop covering the content underneath - http://nicolasgallagher.com/jump-links-and-viewport-positioning/
+
+#how-it-works:before,
+#catalogue:before,
+#library-locations:before {
+    content: "";
+    display: block;
+    height: 50px;
+    margin: -30px 0 0;
 }
 
 // ------------------------------- Block divider
@@ -106,8 +117,9 @@ nav {
         animation: updown 1.5s ease infinite;
 
         background-repeat: no-repeat;
-        background: url('../images/icons/down-arrow.png');
+        background: url("../images/icons/down-arrow.png");
         background-size: 37px 37px;
+        text-indent: -9999px;
     }
 
     a > i {
@@ -140,13 +152,11 @@ nav {
     }
 }
 
-
 @media (max-width: $mobile-width) {
     .main-container__card {
         padding: 0;
     }
 }
-
 
 // Animation up and down arrow hero image taken from https://stackoverflow.com/questions/59135939/how-to-make-an-icon-move-up-and-down-with-css-animation
 @keyframes updown {
@@ -175,7 +185,6 @@ nav {
 
     &__card {
         margin: 0 50px 100px 50px;
-
     }
 
     &__card-title {
@@ -219,7 +228,7 @@ nav {
     .how-it-works-container__heading h2 {
         font-size: 40px;
     }
-    
+
     .how-it-works-container__card-title {
         margin-top: 4rem;
         font-size: 35px;
@@ -256,7 +265,6 @@ nav {
     color: $white;
     height: 520px;
     margin: 50px 0 80px 0;
-    
 
     &__heading {
         text-align: center;
@@ -312,7 +320,7 @@ nav {
     }
 
     input {
-        box-sizing: border-box;  
+        box-sizing: border-box;
     }
 
     &__search-bar {
@@ -320,15 +328,13 @@ nav {
     }
 
     &__search-box {
-        border-radius: .3em;
+        border-radius: 0.3em;
     }
-
 }
 
 //------------------------------------------> Library Locations
 
 .locations-container {
-
     &__heading {
         text-align: center;
         margin: 50px 0 50px 0;
@@ -373,7 +379,6 @@ nav {
     &__card-title--pink {
         color: $primary-4;
     }
-
 }
 
 .form-control {
@@ -384,14 +389,13 @@ nav {
         background-color: $gray;
         border-color: $primary-3;
         outline: 0;
-        box-shadow: 0 0 0 0.2rem rgba($primary-2,.25);
+        box-shadow: 0 0 0 0.2rem rgba($primary-2, 0.25);
     }
 }
 
 .hide-dropdown {
-    display: none;   
-}    
-
+    display: none;
+}
 
 //------------------------------------------> Scroll to top arrow
 
@@ -404,12 +408,12 @@ nav {
     width: 37px;
     height: 37px;
     overflow: hidden;
-    background: url('../images/icons/up-arrow.png');
+    background: url("../images/icons/up-arrow.png");
     background-position: 0 0;
     background-size: 37px 37px;
     border-radius: 50%;
     background-repeat: no-repeat;
-    transition: bottom .3s ease-out,background 250ms ease-in-out;
+    transition: bottom 0.3s ease-out, background 250ms ease-in-out;
     text-indent: -9999px;
     cursor: pointer;
     background-color: $primary-4;
@@ -422,8 +426,6 @@ nav {
         bottom: 15px;
     }
 }
-
-
 
 @media (max-width: $mobile-width) {
     .nav-top {
@@ -447,17 +449,16 @@ nav {
         padding: 0 0 2em 0;
     }
 
-
     &__logo {
-            text-align: center;
+        text-align: center;
     }
-        
+
     &__logo-img {
-            border-radius: 5%;
-            width: 80%;
-            object-fit: cover;
-            align-items: center;
-        }
+        border-radius: 5%;
+        width: 80%;
+        object-fit: cover;
+        align-items: center;
+    }
 
     &__nav {
         list-style-type: none;

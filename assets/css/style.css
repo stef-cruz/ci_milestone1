@@ -4,6 +4,15 @@ footer {
   font-family: "Roboto", sans-serif;
 }
 
+#how-it-works:before,
+#catalogue:before,
+#library-locations:before {
+  content: "";
+  display: block;
+  height: 50px;
+  margin: -30px 0 0;
+}
+
 .block-divider {
   margin: 5rem 0;
 }
@@ -13,17 +22,17 @@ footer {
   height: 5px;
   background-color: white;
   border-radius: 50px 0;
-  -webkit-box-shadow: 2px 2px #E5376F;
-          box-shadow: 2px 2px #E5376F;
+  -webkit-box-shadow: 2px 2px #e5376f;
+          box-shadow: 2px 2px #e5376f;
 }
 
 .block-divider--blue {
   width: 50px;
   height: 5px;
-  background-color: #41387C;
+  background-color: #41387c;
   border-radius: 50px 0;
-  -webkit-box-shadow: 2px 2px #9D98C2;
-          box-shadow: 2px 2px #9D98C2;
+  -webkit-box-shadow: 2px 2px #9d98c2;
+          box-shadow: 2px 2px #9d98c2;
 }
 
 nav .navbar-brand {
@@ -32,12 +41,12 @@ nav .navbar-brand {
 
 .navbar {
   padding: 0.9rem;
-  background-color: #41387C;
+  background-color: #41387c;
   color: white;
 }
 
 .navbar-fixed-top.scrolled {
-  background-color: #E5376F !important;
+  background-color: #e5376f !important;
   -webkit-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
 }
@@ -77,12 +86,13 @@ nav .navbar-brand {
   background-repeat: no-repeat;
   background: url("../images/icons/down-arrow.png");
   background-size: 37px 37px;
+  text-indent: -9999px;
 }
 
 .main-container a > i {
   position: absolute;
   font-size: 2.5rem;
-  color: #41387C;
+  color: #41387c;
   margin-top: -30px;
 }
 
@@ -90,15 +100,15 @@ nav .navbar-brand {
   background-color: white;
   border-radius: 50px 0;
   padding: 30px;
-  -webkit-box-shadow: 10px 10px #41387C;
-          box-shadow: 10px 10px #41387C;
+  -webkit-box-shadow: 10px 10px #41387c;
+          box-shadow: 10px 10px #41387c;
 }
 
 .main-container__card-title {
   font-family: "Noto Serif", serif;
   font-weight: 500;
   font-size: 50px;
-  color: #41387C;
+  color: #41387c;
 }
 
 .main-container__card-text {
@@ -149,7 +159,7 @@ nav .navbar-brand {
   text-align: center;
   margin: 50px 0 50px 0;
   font-family: "Noto Serif", serif;
-  color: #41387C;
+  color: #41387c;
 }
 
 .how-it-works-container__card {
@@ -157,13 +167,13 @@ nav .navbar-brand {
 }
 
 .how-it-works-container__card-title {
-  color: #41387C;
+  color: #41387c;
   font-family: "Noto Serif", serif;
 }
 
 .how-it-works-container__card-title span {
   display: block;
-  color: #9D98C2;
+  color: #9d98c2;
 }
 
 .how-it-works-container__card-image {
@@ -172,8 +182,8 @@ nav .navbar-brand {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50px 0;
-  -webkit-box-shadow: 5px 5px #9D98C2;
-          box-shadow: 5px 5px #9D98C2;
+  -webkit-box-shadow: 5px 5px #9d98c2;
+          box-shadow: 5px 5px #9d98c2;
 }
 
 .how-it-works-container__card--right {
@@ -234,7 +244,7 @@ nav .navbar-brand {
 }
 
 .catalogue-container {
-  background-color: #41387C;
+  background-color: #41387c;
   color: white;
   height: 520px;
   margin: 50px 0 80px 0;
@@ -255,7 +265,7 @@ nav .navbar-brand {
 }
 
 .catalogue-container__title--alt {
-  color: #9D98C2;
+  color: #9d98c2;
   padding-bottom: 35px;
   text-align: center;
 }
@@ -280,7 +290,7 @@ nav .navbar-brand {
   padding-top: 1em;
   padding-bottom: 1em;
   border: 0;
-  background-color: #E5376F;
+  background-color: #e5376f;
 }
 
 .catalogue-container #search_box input {
@@ -301,14 +311,14 @@ nav .navbar-brand {
 }
 
 .catalogue-container__search-box {
-  border-radius: .3em;
+  border-radius: 0.3em;
 }
 
 .locations-container__heading {
   text-align: center;
   margin: 50px 0 50px 0;
   font-family: "Noto Serif", serif;
-  color: #41387C;
+  color: #41387c;
 }
 
 .locations-container__form {
@@ -319,7 +329,7 @@ nav .navbar-brand {
 .locations-container__title {
   text-align: center;
   margin: 40px 0;
-  color: #41387C;
+  color: #41387c;
 }
 
 .locations-container__dropdown {
@@ -328,7 +338,7 @@ nav .navbar-brand {
 
 .locations-container__card {
   margin-top: 50px;
-  color: #41387C;
+  color: #41387c;
   background-color: #eaeaea;
 }
 
@@ -347,15 +357,15 @@ nav .navbar-brand {
 }
 
 .locations-container__card-title--pink {
-  color: #E5376F;
+  color: #e5376f;
 }
 
 .form-control {
-  color: #41387C;
+  color: #41387c;
 }
 
 .form-control:focus {
-  color: #E5376F;
+  color: #e5376f;
   background-color: #eaeaea;
   border-color: #3755be;
   outline: 0;
@@ -381,11 +391,11 @@ nav .navbar-brand {
   background-size: 37px 37px;
   border-radius: 50%;
   background-repeat: no-repeat;
-  -webkit-transition: bottom .3s ease-out,background 250ms ease-in-out;
-  transition: bottom .3s ease-out,background 250ms ease-in-out;
+  -webkit-transition: bottom 0.3s ease-out, background 250ms ease-in-out;
+  transition: bottom 0.3s ease-out, background 250ms ease-in-out;
   text-indent: -9999px;
   cursor: pointer;
-  background-color: #E5376F;
+  background-color: #e5376f;
   visibility: hidden;
   opacity: 0;
 }
@@ -404,12 +414,12 @@ nav .navbar-brand {
 
 .footer-container {
   background-color: white;
-  color: #41387C;
+  color: #41387c;
   font-weight: 300;
 }
 
 .footer-container p > a {
-  color: #41387C;
+  color: #41387c;
   text-decoration: underline;
 }
 
@@ -438,7 +448,7 @@ nav .navbar-brand {
 }
 
 .footer-container__nav a {
-  color: #41387C;
+  color: #41387c;
 }
 
 .footer-container__nav-link {
@@ -451,7 +461,7 @@ nav .navbar-brand {
 
 .footer-container__social-links--list {
   text-align: center;
-  background-color: #41387C;
+  background-color: #41387c;
   margin: 0;
   padding: 15px 0;
 }
