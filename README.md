@@ -54,44 +54,49 @@ As a library user...
  - I want to know which libraries are near me and the working hours so that I can arrange the collection.
 
 
+
 Wireframes
 ------
 
-## Home page
+### Home page
 
-## How it Works page
 
-## Library Catalogue page
+### How it Works page
 
-## Find your Local Library page
+
+### Library Catalogue page
+
+
+### Find your Local Library page
+
 
 
 Technologies Used
 ------
 
-## Programming Languages
+### Programming Languages
 
 - HTML5
-  Main language
+   Main language
 
 - CSS3
-  Page style
+   Page style
 
 - Sass
-  Preprocessor used to make CSS more fun and powerful
+   Preprocessor used to make CSS more fun and powerful
 
 - JavaScript
-  Some front end functionalities 
+   Some front end functionalities 
 
 
 
-## Other Tools
+### Other Tools
 
 - GitHub
-  Used to store my project source code
+   Used to store my project source code
 
 - VS Code
-  Main IDE
+   Main IDE
 
 - Balsamiq
-  Used to create wireframes for the website.
+   Used to create wireframes for the website.
