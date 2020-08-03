@@ -65,13 +65,18 @@ nav .navbar-brand {
 
 .main-container__arrow {
   position: absolute;
-  bottom: 45px;
+  bottom: 100px;
   left: 50%;
-  width: 60px;
-  height: 60px;
+  right: 50px;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
   cursor: pointer;
   -webkit-animation: updown 1.5s ease infinite;
           animation: updown 1.5s ease infinite;
+  background-repeat: no-repeat;
+  background: url("../images/icons/down-arrow.png");
+  background-size: 37px 37px;
 }
 
 .main-container a > i {
@@ -308,7 +313,7 @@ nav .navbar-brand {
 
 .locations-container__form {
   background-color: #eaeaea;
-  font-style: "Roboto", serif;
+  font-family: "Roboto", serif;
 }
 
 .locations-container__title {

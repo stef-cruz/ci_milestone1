@@ -92,12 +92,22 @@ nav {
 
     &__arrow {
         position: absolute;
-        bottom: 45px;
+
+        bottom: 100px;
         left: 50%;
-        width: 60px;
-        height: 60px;
+        right: 50px;
+
+        width: 37px;
+        height: 37px;
+
+        border-radius: 50%;
+
         cursor: pointer;
         animation: updown 1.5s ease infinite;
+
+        background-repeat: no-repeat;
+        background: url('../images/icons/down-arrow.png');
+        background-size: 37px 37px;
     }
 
     a > i {
@@ -328,7 +338,7 @@ nav {
 
     &__form {
         background-color: $gray;
-        font-style: "Roboto", serif;
+        font-family: "Roboto", serif;
     }
 
     &__title {
