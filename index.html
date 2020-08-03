@@ -57,7 +57,8 @@
                     </p>
                 </div>
             </div>
-            <a href="#how-it-works" class="main-container__arrow hidden-sm-down anchor" aria-hidden="true">Scroll to next
+            <a href="#how-it-works" class="main-container__arrow hidden-sm-down anchor" aria-hidden="true">Scroll to
+                next
                 section</a>
         </div>
     </section>
@@ -128,7 +129,13 @@
             </div>
             <hr class="block-divider--white-pink">
             <div class="row justify-content-center">
-                <!-- Search section taken from https://www.librariesireland.ie/ -->
+                <!-- Search box section taken from https://www.librariesireland.ie/ -->
+                <div>
+                    <input id="encorebase" name="encorebase"
+                        value="http://librariesireland.iii.com/iii/encore/search/C|S" type="hidden">
+                    <input id="searchlocation" name="searchlocation" value="||Orightresult?lang=eng&amp;suite=def"
+                        type="hidden">
+                </div>
                 <div class="col-12 col-xl-9" id="search_box">
                     <h4 class="catalogue-container__title">Over 12 million books, movies and more.</h4>
                     <p class="catalogue-container__title--alt">Free to borrow</p>
@@ -149,8 +156,8 @@
                         <a href="http://librariesireland.iii.com/iii/encore/home?lang=eng&amp;suite=def&amp;advancedSearch=true&amp;searchString=Enter%20author%2C%20title%20or%20keyword(s)"
                             target="_blank">Advanced Search</a>
                     </div>
-
                 </div>
+                <!-- ./End search box-->
             </div>
         </div>
     </section>
@@ -535,7 +542,7 @@
     </section>
     <!-- ./Library Locations -->
 
-    <!-- Arrow scroll to top -->
+    <!-- Arrow scroll to top, idea taken from https://www.tavi.pt/ -->
     <a class="nav-top" style="display: block;" onclick="scrollToTop()">Scroll Top</a>
     <!-- ./Arrow scroll to top -->
 
@@ -629,6 +636,31 @@
 
     <!-- Animated scroll to top button, taken from https://www.youtube.com/watch?v=Pd71ZZeIhaI -->
     <script src="assets/js/scrollTopFadeInOut.js"></script>
+
+    <!-- Search box script taken from https://www.librariesireland.ie/ -->
+    <script type="text/javascript">
+        function gosearch() {
+            var searchstring = document.getElementById('target').value + document.getElementById('searchlocation').value;
+            var searchsite = document.getElementById('encorebase').value;
+            var searchurl = searchsite + searchstring;
+
+            // window.location.href = searchurl;
+            window.open(searchurl, '_blank');
+        }
+
+        function submitenter(myfield, e) {
+            var keycode;
+            if (window.event) keycode = window.event.keyCode;
+            else if (e) keycode = e.which;
+            else return true;
+
+            if (keycode == 13) {
+                gosearch();
+                return false;
+            } else
+                return true;
+        }
+    </script>
 
 </body>
 
