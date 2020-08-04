@@ -82,33 +82,33 @@ Technologies
 
 #### Programming Languages
 
-- HTML5
-   Main language used across website
+- HTML5  
+Main language used across the website
 
-- CSS3
-   Page style
+- CSS3  
+Page style
 
-- Sass
-   Preprocessor used to make CSS more fun and powerful
+- Sass  
+Preprocessor used to make CSS more fun and powerful
 
-- JavaScript
-   Some front end functionalities 
+- JavaScript  
+Some front end functionalities 
 
 
 
 #### Other Tools
 
-- GitHub
-   Used to store my project source code
+- GitHub  
+Used to store my project source code
 
-- VS Code
-   Main IDE
+- VS Code  
+Main IDE
 
-- Balsamiq
-   Used to create wireframes for the website
+- Balsamiq  
+Used to create wireframes for the website
 
-- [AOS Animation](https://michalsnik.github.io/aos/)
-   Animate on scroll library
+- [AOS Animation](https://michalsnik.github.io/aos/)  
+Animate on scroll library
 
 
  
