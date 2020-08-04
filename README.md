@@ -1,4 +1,4 @@
-Call & Collect Service from Dublin City Library
+Call & Collect Service from Dublin City Libraries
 ======
 
 
@@ -43,7 +43,7 @@ UX
 
 As a library user...
 
- - I want to know how Call & Collect works so that I can avail of the service.
+ - I want to know how the Call & Collect service works so that I can avail of the service.
  - I want to see the library catalogue online so that I can pick the book I’m interested in.
  - I want to know which number I should call so that I can arrange the collection.
  - I want to know which libraries are near me and the working hours so that I can arrange the collection.  
@@ -105,7 +105,10 @@ Technologies
    Main IDE
 
 - Balsamiq
-   Used to create wireframes for the website.  
+   Used to create wireframes for the website
+
+- [AOS Animation](https://michalsnik.github.io/aos/)
+   Animate on scroll library
 
 
  

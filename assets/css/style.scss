@@ -76,6 +76,7 @@ nav {
     padding: 0.9rem;
     background-color: $primary-1;
     color: $white;
+    box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
 // Nav change colour on scroll - taken from https://stackoverflow.com/questions/23706003/changing-nav-bar-color-after-scrolling
@@ -361,6 +362,7 @@ nav {
         margin-top: 50px;
         color: $primary-1;
         background-color: $gray;
+        box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.14);
     }
 
     &__card-body h5 {
