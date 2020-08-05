@@ -134,30 +134,28 @@ Likewise, the CSS code passed the W3C CSS validator without errors.
 |---|---|---|---|
 |Chrome|Windows|PC|Excellent|
 |Firefox|Windows|PC|Excellent|
-|Microsoft Edge|Windows|PC|Good - arrow up smooth scroll to top not working |
-|Internet Explorer|Windows|PC|Good - arrow up smooth scroll to top not working, arrow up flickering, library images streched|
+|Microsoft Edge|Windows|PC|Good - smooth scroll to top not working when clicking on arrow up |
+|Internet Explorer|Windows|PC|Good - smooth scroll to top not working when clicking on arrow up, arrow up flickering, library images streched|
 |Chrome|Linux|PC|Excellent|
-|Firefox|Linux|PC|*pending*|
+|Firefox|Linux|PC|Excellent|
 |Chrome|Mac|PC|Excellent|
 |Firefox|Mac|PC|Excellent|
-|Safari|Mac|PC|Excellent|
-|Chrome|Samsung S8|Mobile|*pending*|
-|Chrome|Samsung Z Flip|Mobile|*pending*|
-|iOS Safari|iPhone X|Mobile|*pending*|
+|Safari|Mac|PC|Good - smooth scroll to top not working when clicking on arrow up|
+|Chrome|Samsung S8 Android 9|Mobile|Excellent|
 
 #### Testing plan
 
-- [ ] Links on navbar
-- [ ] Click at arrow on home page
-- [ ] Perform search on library catalogue pressing enter
-- [ ] Perform search on library catalogue clicking on search icon
-- [ ] Click on 'Advanced Search'
-- [ ] Select branches on dropdown
-- [ ] Click on 'View Larger Map'
-- [ ] Links on footer
-- [ ] Social media links on footer
-- [ ] Click arrow up
-- [ ] Navbar toggle - check links and ensure it is collapsing after click  
+- [X] Links on navbar
+- [X] Click at arrow on home page
+- [X] Perform search on library catalogue pressing enter
+- [X] Perform search on library catalogue clicking on search icon
+- [X] Click on 'Advanced Search'
+- [X] Select branches on dropdown
+- [X] Click on 'View Larger Map'
+- [X] Links on footer
+- [X] Social media links on footer
+- [X] Click arrow up
+- [X] Navbar toggle - check links and ensure it is collapsing after click  
 
 
  
