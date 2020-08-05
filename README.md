@@ -132,16 +132,17 @@ Likewise, the CSS code passed the W3C CSS validator without errors.
 
 |Browser|OS|Device|Compatibility|
 |---|---|---|---|
-|Chrome|Windows|PC|*pending*|
-|Firefox|Windows|PC|*pending*|
-|Microsoft Edge|Windows|PC|*pending*|
-|Internet Explorer|Windows|PC|*pending*|
-|Chrome|Linux|PC|*pending*|
+|Chrome|Windows|PC|Excellent|
+|Firefox|Windows|PC|Excellent|
+|Microsoft Edge|Windows|PC|Good - arrow up smooth scroll to top not working |
+|Internet Explorer|Windows|PC|Good - arrow up smooth scroll to top not working, arrow up flickering, library images streched|
+|Chrome|Linux|PC|Excellent|
 |Firefox|Linux|PC|*pending*|
-|Chrome|Mac|PC|*pending*|
-|Firefox|Mac|PC|*pending*|
-|Safari|Mac|PC|*pending*|
+|Chrome|Mac|PC|Excellent|
+|Firefox|Mac|PC|Excellent|
+|Safari|Mac|PC|Excellent|
 |Chrome|Samsung S8|Mobile|*pending*|
+|Chrome|Samsung Z Flip|Mobile|*pending*|
 |iOS Safari|iPhone X|Mobile|*pending*|
 
 #### Testing plan
