@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Noto+Serif:100,200,300,400,500,600,700");
 
+// ------------------------------- General styling
+
 * {
     font-size: 10px;
 }
@@ -11,6 +13,11 @@ h2 {
 p,
 a {
     font-size: 1.6rem;
+}
+
+body,
+footer {
+    font-family: "Roboto", sans-serif;
 }
 
 // ------------------------------- Mixins
@@ -41,12 +48,6 @@ $mobile-width: 30rem; // 480px is 30rem
 $tablet-width: 48rem; // 768px is 48rem
 $desktop-width: 64rem; // 1024px is 64rem
 
-// ------------------------------- General styling
-
-body,
-footer {
-    font-family: "Roboto", sans-serif;
-}
 
 // Solution to fixed top navbar stop covering the content underneath - http://nicolasgallagher.com/jump-links-and-viewport-positioning/
 
@@ -55,7 +56,7 @@ footer {
 #library-locations:before {
     content: "";
     display: block;
-    height: 5rem;
+    height: 6rem;
     margin: -3rem 0 0;
 }
 
@@ -110,7 +111,7 @@ nav {
 }
 
 .navbar {
-    padding: 1.6rem;
+    padding: 1.7rem;
     background-color: $primary-1;
     color: $white;
     box-shadow: 0 1rem 3rem -1.2rem rgba(0, 0, 0, 0.42), 0 0.4rem 2.5rem 0 rgba(0, 0, 0, 0.12),
@@ -145,7 +146,7 @@ nav {
 
         bottom: 10rem;
         left: 50%;
-        right: 50px;
+        right: 3.1rem;
 
         width: 3.2rem;
         height: 3.2rem;
@@ -159,13 +160,6 @@ nav {
         background: url("../images/icons/down-arrow.png");
         background-size: 3.2rem 3.2rem;
         text-indent: -9999px;
-    }
-
-    a > i {
-        position: absolute;
-        font-size: 2.5rem;
-        color: $primary-1;
-        margin-top: -30px;
     }
 
     &__card {
@@ -306,7 +300,7 @@ nav {
 .catalogue-container {
     background-color: $primary-1;
     color: $white;
-    height: 50rem;
+    height: 45rem;
     margin: 3.1rem 0 5rem 0;
 
     &__heading {
@@ -314,7 +308,7 @@ nav {
         font-family: "Noto Serif", serif;
 
         h2 {
-            padding: 50px 0 25px 0;
+            padding: 4rem 0 1.9rem 0;
         }
     }
 
@@ -493,7 +487,7 @@ nav {
     &.active {
         visibility: visible;
         opacity: 1;
-        bottom: 15px;
+        bottom: 2rem;
     }
 }
 

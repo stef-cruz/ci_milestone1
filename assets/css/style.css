@@ -22,7 +22,7 @@ footer {
 #library-locations:before {
   content: "";
   display: block;
-  height: 5rem;
+  height: 6rem;
   margin: -3rem 0 0;
 }
 
@@ -73,7 +73,7 @@ nav button.navbar-toggler span {
 }
 
 .navbar {
-  padding: 1.6rem;
+  padding: 1.7rem;
   background-color: #41387c;
   color: white;
   -webkit-box-shadow: 0 1rem 3rem -1.2rem rgba(0, 0, 0, 0.42), 0 0.4rem 2.5rem 0 rgba(0, 0, 0, 0.12), 0 0.8rem 1rem -0.5rem rgba(0, 0, 0, 0.2);
@@ -111,7 +111,7 @@ nav button.navbar-toggler span {
   position: absolute;
   bottom: 10rem;
   left: 50%;
-  right: 50px;
+  right: 3.1rem;
   width: 3.2rem;
   height: 3.2rem;
   border-radius: 50%;
@@ -122,13 +122,6 @@ nav button.navbar-toggler span {
   background: url("../images/icons/down-arrow.png");
   background-size: 3.2rem 3.2rem;
   text-indent: -9999px;
-}
-
-.main-container a > i {
-  position: absolute;
-  font-size: 2.5rem;
-  color: #41387c;
-  margin-top: -30px;
 }
 
 .main-container__card {
@@ -281,7 +274,7 @@ nav button.navbar-toggler span {
 .catalogue-container {
   background-color: #41387c;
   color: white;
-  height: 50rem;
+  height: 45rem;
   margin: 3.1rem 0 5rem 0;
 }
 
@@ -291,7 +284,7 @@ nav button.navbar-toggler span {
 }
 
 .catalogue-container__heading h2 {
-  padding: 50px 0 25px 0;
+  padding: 4rem 0 1.9rem 0;
 }
 
 .catalogue-container__title {
@@ -459,7 +452,7 @@ nav button.navbar-toggler span {
 .nav-top.active {
   visibility: visible;
   opacity: 1;
-  bottom: 15px;
+  bottom: 2rem;
 }
 
 @media (min-width: 30rem) {
