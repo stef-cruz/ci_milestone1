@@ -29,6 +29,7 @@ Table of Contents
     - [W3C CSS Validator](#w3c-css-validator)
     - [Browser and Device Testing](#browser-and-device-testing)
     - [Testing plan](#testing-plan)
+- [Deployment](#deployment)
 - [Credits](#credits)
     - [Content](#content)
     - [Images](#images)
@@ -80,6 +81,8 @@ Wireframes
 Technologies
 ------
 
+This project goes above and beyond the two foundation programming languages required for the Milestone 1, which are HTML and CSS. It also utilised the framework Bootstrap and the preprocessor SASS. 
+
 #### Programming Languages
 
 - HTML5  
@@ -88,18 +91,20 @@ Main language used across the website
 - CSS3  
 Page style
 
-- Sass  
+- Bootstrap v4.5
+This project used Bootstrap elements such as navbar, grid, cards, etc.
+
+- SASS  
 Preprocessor used to make CSS more fun and powerful
 
 - JavaScript  
 Some front end functionalities 
 
 
-
 #### Other Tools
 
 - GitHub  
-Used to store my project source code
+Used to store this project's source code
 
 - VS Code  
 Main IDE
@@ -157,8 +162,20 @@ Likewise, the CSS code passed the W3C CSS validator without errors.
 - [X] Click arrow up
 - [X] Navbar toggle - check links and ensure it is collapsing after click  
 
-
  
+Deployment
+------
+
+This project's repository is hosted on GitHub and was coded using the Visual Studio Code IDE. The following extensions were enabled to make the work easier:
+
+- Live Sass Compiler 
+- SCSS Formatter
+- GitHub Pull Requests and Issues
+- Bootstrap 4 CDN Snippet
+
+A clone of this repository was made locally, and the changes were deployed directly in the master branch. The commands used to push the changes were ```git add .```, ```git commit -m "message"``` and ```git push```. All the commits can be clearly identified by a concise and meaningful message. The deployment consisted of publishing the GitHub Page in this repo's Settings > GitHub Pages. The link is https://stefcruz.github.io/ci_milestone1/.
+
+
 Credits
 ------
 
