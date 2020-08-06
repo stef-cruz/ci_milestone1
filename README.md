@@ -5,7 +5,7 @@ Call & Collect Service from Dublin City Libraries
 Overview
 ------
 
-The [Call & Collect](https://stefcruz.github.io/ci_milestone1/) is an existing service offered by the Dublin City Libraries in response to the pandemic as part of the phased re-opening of the libraries. As this service did not have a dedicated website, I decided to create one for my first milestone project. 
+The [Call & Collect](https://stefcruz.github.io/ci_milestone1/index.html) is an existing service offered by the Dublin City Libraries in response to the pandemic as part of the phased re-opening of the libraries. As this service did not have a dedicated website, I decided to create one for my first milestone project. 
 
 This website's main purpose is to promote the service, explanining how library users can avail of this new initiative and which branches have taken part of the service. 
 
@@ -91,14 +91,14 @@ Main language used across the website
 - CSS3  
 Page style
 
-- Bootstrap v4.5
+- Bootstrap v4.5  
 This project used Bootstrap elements such as navbar, grid, cards, etc.
 
 - SASS  
 Preprocessor used to make CSS more fun and powerful
 
 - JavaScript  
-Some front end functionalities 
+Some front end functionalities such as smooth scroll, search bar, etc.
 
 
 #### Other Tools
